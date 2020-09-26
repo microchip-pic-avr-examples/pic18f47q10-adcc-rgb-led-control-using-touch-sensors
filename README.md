@@ -45,7 +45,7 @@ The following connections should be done between the Curiosity HPC board and QT7
 </p>
 
 <p align="center">
-  <img width=auto height=auto src="images/systemModule.png">
+  <img width=auto height=auto src="images/hardwaresetup.png">
 </p>
 
 ## Demo Hardware Setup
@@ -124,25 +124,29 @@ Customized the names of I/O pins as below. Configured the pins RD5 and RB2 as ou
 2. Build demo firmware and load the generated hex file onto the PIC18F25Q10 MCU. When the demo firmware is loaded, red LEDs are turned on with lowest brightness.
 
 <p align="center">
-  <img width=auto height=auto src="images/systemModule.png">
+  <img width=auto height=auto src="images/intialsetup.png">
 </p>
 
 3. Pressing touch button 1 will increase the brightness.
 
 <p align="center">
-  <img width=auto height=auto src="images/systemModule.png">
+  <img width=auto height=auto src="images/speedincrease.png">
 </p>
 
 4. Pressing touch button 2 will decrease the brightness.
 
 <p align="center">
-  <img width=auto height=auto src="images/systemModule.png">
+  <img width=auto height=auto src="images/decreasingspeed.png">
 </p>
 
 5. When both the buttons are pressed together the color will change.
 
 <p align="center">
-  <img width=auto height=auto src="images/systemModule.png">
+  <img width=auto height=auto src="images/color1.png">
+</p>
+
+<p align="center">
+  <img width=auto height=auto src="images/color2.png">
 </p>
 
 6. The state of buttons (i.e. finger touch/release event) can be visualized through the feedback LEDs present on the QT7 xplained pro kit.
@@ -150,7 +154,7 @@ Customized the names of I/O pins as below. Configured the pins RD5 and RB2 as ou
 7. The brightness levels can be adjusted by changing the macro values in the RGB4x4Click.h header file.
 
 <p align="center">
-  <img width=auto height=auto src="images/systemModule.png">
+  <img width=auto height=auto src="images/color3.png">
 </p>
 
 **Note:**
