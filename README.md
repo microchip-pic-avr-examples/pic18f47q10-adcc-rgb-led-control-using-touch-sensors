@@ -42,12 +42,12 @@ The following connections should be done between the Curiosity HPC board and QT7
 
 |QT7 Xplained Pro | PIC18F47Q10 | 
 |:---------:|:----------:|
-| PIN4 - Y-LINE-1 |  RA2 |
-| PIN6 - LED6     |  RD5 |
-| PIN10 - Y-LINE-0|  RD7 |
-| PIN11 - LED7    |  RB2 |
-| PIN19 - GND     |  GND |
-| PIN20 - VCC     |  VDD |
+| PIN4  - Y-LINE-1 |  RA2 |
+| PIN6  - LED6     |  RD5 |
+| PIN10 - Y-LINE-0 |  RD7 |
+| PIN11 - LED7     |  RB2 |
+| PIN19 - GND      |  GND |
+| PIN20 - VCC      |  VDD |
 
 <p align="center">
   <img width=auto height=auto src="images/hardwaresetup.png">
