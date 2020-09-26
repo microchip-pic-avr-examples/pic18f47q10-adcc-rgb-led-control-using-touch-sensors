@@ -145,16 +145,13 @@ Customized the names of I/O pins as below. Configured the pins RD5 and RB2 as ou
   <img width=auto height=auto src="images/color1.png">
 </p>
 
-<p align="center">
-  <img width=auto height=auto src="images/color2.png">
-</p>
 
 6. The state of buttons (i.e. finger touch/release event) can be visualized through the feedback LEDs present on the QT7 xplained pro kit.
 
 7. The brightness levels can be adjusted by changing the macro values in the RGB4x4Click.h header file.
 
 <p align="center">
-  <img width=auto height=auto src="images/color3.png">
+  <img width=auto height=auto src="images/color2.png">
 </p>
 
 **Note:**
