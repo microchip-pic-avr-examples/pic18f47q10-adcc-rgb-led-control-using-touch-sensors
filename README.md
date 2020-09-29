@@ -5,7 +5,7 @@
 
 ## Introduction
   
-The PIC18FxxQ10 family of devices have advanced ADCC module, which supports hardware CVD feature for seamless integration of capacitive touch sensing capability to the applications.
+The PIC18F-Q10 family of devices have advanced ADCC module, which supports hardware CVD feature for seamless integration of capacitive touch sensing capability to the applications.
 
 This demo illustrates usage of ADC with computation (ADCC) and capacitive voltage division (CVD) modules present in Q10 family of MCUs, to control a 4x4 RGB LED click board using Microchip’s Curiosity HPC development board and QT7 Xplained Pro extension kit.
 
@@ -20,27 +20,34 @@ This demo illustrates usage of ADC with computation (ADCC) and capacitive voltag
 
 In this demo,
 
-* PIC18F25Q10 (28-pin, SPDIP package) MCU is used to demonstrate peripheral features of the Q10 family of MCUs.
-* The curiosity HPC development board is used as it supports two mikroBUS slots for MikroElektronika™ click boards and has got on-chip programmer and debugger.
+* PIC18F47Q10 (40-pin, SPDIP package) MCU is used to demonstrate peripheral features of the Q10 family of MCUs.
+* The Microchip Curiosity Nano Base for Click boards™ evaluation kit is a hardware extension platform to ease the connection between Curiosity Nano kits and extension boards like the mikroBUS Click modules and Xplained Pro extension boards.
 * The QT7 Xplained PRO extension kit is used as it has got two touch buttons and a slider to detect the touch events to control 4x4 RGB click. The library support for touch is present in MCC (Microchip Code Configurator), which is intuitive and can be configured in few clicks.
 
-The MCC library for PIC18F25Q10 MCU provides support for touch buttons and proximity sensors. The two buttons present on QT7 Xplained kit are configured to control the brightness and change the colors of RGB click. The buttons on QT7 has feedback LEDs to indicate the button press event, which can be controlled by the microcontroller.
+The MCC library for PIC18F47Q10 MCU provides support for touch buttons and proximity sensors. The two buttons present on QT7 Xplained kit are configured to control the brightness and change the colors of RGB click. The buttons on QT7 has feedback LEDs to indicate the button press event, which can be controlled by the microcontroller.
 
 
 ## Software  Tools
 
 - [MPLAB X IDE v5.40](https://www.microchip.com/mplab/mplab-x-ide "MPLAB X IDE v5.40")
 - [XC8 Compiler v2.30](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.20")
-- [MCC Core v5.0.1](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB Code Configurator")
-- [mTouch Capacitive Sensing Library v2.90]()
+- [MCC Core v4.85](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB Code Configurator")
+- [mTouch Capacitive Sensing Library v2.90.0]( https://www.microchip.com/mplab/mplab-code-configurator "mTouch Capacitive Sensing Library v2.90.0")
 
-**Note: For running the demo, the installed tool versions should be the same or later. This example is not tested with the previous versions.**
+***Note: For running the demo, the installed tool versions should be the same or later. This example is not tested with the previous versions.***
+
+## Hardware used
+
+- [PIC18F47Q10 Curiosity Nano](https://www.microchip.com/Developmenttools/ProductDetails/DM182029 "PIC18F47Q10 Curiosity Nano")
+- [4x4 RGB click](https://www.mikroe.com/4x4-rgb-click "4x4 RGB click")
+- [QT7 Xplained Pro Extension Board](https://www.microchip.com/developmenttools/ProductDetails/atqt7-xpro "QT7 Xplained Pro Extension Board")
+- [Curiosity Nano Base for Click boards](https://www.microchip.com/developmenttools/ProductDetails/AC164162 "Curiosity Nano Base for Click boards")
 
 ## Hardware connections
 
-The following connections should be done between the Curiosity HPC board and QT7 Xplained PRO extension kit
+The following connections should be done between the PIC18F47Q10 Curiosity Nano board and QT7 Xplained PRO extension kit. Plugin the 4x4 RGB click in mikroBUS slot1 of the curiosity nano base click board.
 
-|QT7 Xplained Pro | PIC18F47Q10 | 
+|QT7 Xplained Pro | PIC18F47Q10 Curiosity Nano| 
 |:---------:|:----------:|
 | PIN4   - Y-LINE-1 |  RA2 |
 | PIN6   - LED6     |  RD5 |
@@ -53,9 +60,6 @@ The following connections should be done between the Curiosity HPC board and QT7
   <img width=auto height=auto src="images/hardwaresetup.png">
 </p>
 
-## Demo Hardware Setup
-
-Plugin the 4x4 RGB click in mikroBUS slot1 of the curiosity HPC board. Additionally, RC0 should be shorted to RD0 via jumper for the working of 4x4 RGB LED click board. This is required as PIC18F25Q10 (28 pin device) doesn't have PORTD and the bit banging pin on the curiosity board for RGB click is present on RD0 pin.
 
 ## MCC settings
 
