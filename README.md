@@ -79,7 +79,6 @@ Selected pins RB1 and RB3 as touch buttons, pins RB0 and RB2 to drive the feedba
 
 <p align="center">
   <img width=auto height=auto src="images/pinManager.png">
-  <br>Figure 2: System Configuration <br>
 </p>
 
 Customized the names of I/O pins as below. Configured the pins RD5 and RB2 as output and renamed them as LED1 and LED2 respectively. Also, configured RA7 as output and renamed the pin as RGBLED.
