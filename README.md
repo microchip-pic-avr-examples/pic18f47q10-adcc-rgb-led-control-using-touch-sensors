@@ -87,6 +87,7 @@ Customized the names of I/O pins as below. Configured the pins RD5 and RB2 as ou
   <img width=auto height=auto src="images/pinmodule.png">
 </p>
 
+
 ## mTouch settings:
 
 ### Hardware sensors:
@@ -129,7 +130,7 @@ Customized the names of I/O pins as below. Configured the pins RD5 and RB2 as ou
 
 1. After making the above hardware connections, power on the board with micro USB cable.
 
-2. Build demo firmware and load the generated hex file onto the PIC18F25Q10 MCU. When the demo firmware is loaded, red LEDs are turned on with lowest brightness.
+2. Build demo firmware and load the generated hex file onto the PIC18F47Q10 MCU. When the demo firmware is loaded, red LEDs are turned on with lowest brightness.
 
 <p align="center">
   <img width=auto height=auto src="images/intialsetup.png">
@@ -166,10 +167,10 @@ Customized the names of I/O pins as below. Configured the pins RD5 and RB2 as ou
 
 1. *Two timers are used to detect the duration of button press to handle various operations.*
 2. *If the buttons are pressed and released within 3 seconds , the necessary actions are taken (i.e. brightness control and color change).*
-3. If the buttons are pressed for more than 3 seconds, it will be detected as fault condition and no action will be taken.
-4. This time out can be configured from 1 sec to 3 secs in the firmware using appropriate macro.
-5. Don’t drive the LEDs to maximum brightness. Because it will generate excessive heat and draw more current than advisable (up to 0.7A), which could potentially damage the main board.
-6. Do not touch the board when it is in use.
+3. *If the buttons are pressed for more than 3 seconds, it will be detected as fault condition and no action will be taken.*
+4. *This time out can be configured from 1 sec to 3 secs in the firmware using appropriate macro.*
+5. *Don’t drive the LEDs to maximum brightness. Because it will generate excessive heat and draw more current than advisable (up to 0.7A), which could potentially damage the main board.*
+6. *Do not touch the board when it is in use.*
 
 ## Conclusion
 
