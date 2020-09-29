@@ -84,7 +84,7 @@ Selected pins RB1 and RB3 as touch buttons, pins RB0 and RB2 to drive the feedba
 Customized the names of I/O pins as below. Configured the pins RD5 and RB2 as output and renamed them as LED1 and LED2 respectively. Also, configured RA7 as output and renamed the pin as RGBLED.
 
 <p align="center">
-  <img width=auto height=auto src="images/pinModule.png">
+  <img width=auto height=auto src="images/pinmodule.png">
 </p>
 
 ## mTouch settings:
@@ -164,8 +164,8 @@ Customized the names of I/O pins as below. Configured the pins RD5 and RB2 as ou
 
 **Note:**
 
-*1. Two timers are used to detect the duration of button press to handle various operations.*
-2. If the buttons are pressed and released within 3 seconds , the necessary actions are taken (i.e. brightness control and color change).
+1. *Two timers are used to detect the duration of button press to handle various operations.*
+2. *If the buttons are pressed and released within 3 seconds , the necessary actions are taken (i.e. brightness control and color change).*
 3. If the buttons are pressed for more than 3 seconds, it will be detected as fault condition and no action will be taken.
 4. This time out can be configured from 1 sec to 3 secs in the firmware using appropriate macro.
 5. Don’t drive the LEDs to maximum brightness. Because it will generate excessive heat and draw more current than advisable (up to 0.7A), which could potentially damage the main board.
