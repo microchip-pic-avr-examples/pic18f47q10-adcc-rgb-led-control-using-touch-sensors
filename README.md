@@ -9,6 +9,12 @@ The PIC18F-Q10 family of devices have advanced ADCC module, which supports hardw
 
 This demo illustrates usage of ADC with computation (ADCC) and capacitive voltage division (CVD) modules present in Q10 family of MCUs, to control a 4x4 RGB LED click board using Microchip’s Curiosity HPC development board and QT7 Xplained Pro extension kit.
 
+##### To see the RGB LED  Control using Touch Sensors demo operation video, click on the below image.
+
+<p align="center">
+<br><a href="https://youtu.be/-_WE2X03uRQ" rel="nofollow"><img src="images/videofrontimage.png" alt="AVR DA" width="500"/></a>
+</p>
+
 ## Useful Links
 
 - [PIC18F47Q10 Product Page](https://www.microchip.com/wwwproducts/en/PIC18F47Q10 "PIC18F47Q10 Product Page")
