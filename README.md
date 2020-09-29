@@ -1,7 +1,7 @@
 <!-- Please do not change this html logo with link -->
 <a href="https://www.microchip.com" rel="nofollow"><img src="images/microchip.png" alt="MCHP" width="200"/></a>
 
-## RGB LED Control using Touch Sensors
+## RGB LED Control using Capacitive Touch Sensors
 
 ## Introduction
   
