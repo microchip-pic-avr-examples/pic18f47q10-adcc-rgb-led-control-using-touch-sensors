@@ -9,10 +9,10 @@ The PIC18F-Q10 family of devices have advanced ADCC module, which supports hardw
 
 This demo illustrates usage of ADC with computation (ADCC) and capacitive voltage division (CVD) modules present in Q10 family of MCUs, to control a 4x4 RGB LED click board using Microchip’s Curiosity Nano Base click board and QT7 Xplained Pro extension kit.
 
-##### To see the RGB LED  Control using Touch Sensors demo operation video, click on the below image.
+#### To see the RGB LED  Control using Touch Sensors demo operation video, click on the below image.
 
 <p align="center">
-<br><a href="https://youtu.be/-_WE2X03uRQ" rel="nofollow"><img src="images/videofrontimage.png" alt="AVR DA" width="500"/></a>
+<br><a href="https://youtu.be/-Xf9_homRhU" rel="nofollow"><img src="images/videofrontimage.png" alt="AVR DA" width="500"/></a>
 </p>
 
 ## Useful Links
@@ -26,7 +26,7 @@ This demo illustrates usage of ADC with computation (ADCC) and capacitive voltag
 
 In this demo,
 
-* PIC18F47Q10 (40-pin, SPDIP package) MCU is used to demonstrate peripheral features of the Q10 family of MCUs.
+* PIC18F47Q10 (40-pin) MCU is used to demonstrate peripheral features of the Q10 family of MCUs.
 * The Microchip Curiosity Nano Base for Click boards™ evaluation kit is a hardware extension platform to ease the connection between Curiosity Nano kits and extension boards like the mikroBUS Click modules and Xplained Pro extension boards.
 * The QT7 Xplained PRO extension kit is used as it has got two touch buttons and a slider to detect the touch events to control 4x4 RGB click. The library support for touch is present in MCC (Microchip Code Configurator), which is intuitive and can be configured in few clicks.
 
