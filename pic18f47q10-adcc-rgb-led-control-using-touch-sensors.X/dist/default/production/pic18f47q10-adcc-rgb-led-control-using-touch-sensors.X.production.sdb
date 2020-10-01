@@ -1,0 +1,1675 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F47Q10 ]
+[d frameptr 4065 ]
+"66 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_api_example.c
+[e E99 mtouch_button_names `uc
+Button1 0
+Button2 1
+]
+"149 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[e E12860 mtouch_sensor_names `uc
+Sensor_ANA2 0
+Sensor_AND7 1
+]
+"203
+[e E12863 mtouch_sensor_error `c
+MTOUCH_SENSOR_ERROR_none 0
+MTOUCH_SENSOR_ERROR_invalid_index -1
+MTOUCH_SENSOR_ERROR_interrupt_notEnabled -2
+MTOUCH_SENSOR_ERROR_invalid_calibrate -3
+MTOUCH_SENSOR_ERROR_tooManyRetries -4
+MTOUCH_SENSOR_ERROR_scanOverrun -5
+MTOUCH_SENSOR_ERROR_interruptedScan -6
+]
+"82 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_button.c
+[e E12923 mtouch_button_names `uc
+Button1 0
+Button2 1
+]
+[e E12860 mtouch_sensor_names `uc
+Sensor_ANA2 0
+Sensor_AND7 1
+]
+[e E12985 mtouch_button_state `uc
+MTOUCH_BUTTON_STATE_initializing 0
+MTOUCH_BUTTON_STATE_notPressed 1
+MTOUCH_BUTTON_STATE_pressed 2
+]
+"275
+[e E12989 mtouch_button_hysteresis_thresholds `uc
+HYST_50_PERCENT 1
+HYST_25_PERCENT 2
+HYST_12_5_PERCENT 3
+HYST_6_25_PERCENT 4
+HYST_MAX 5
+]
+"114 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/adcc.c
+[e E12694 . `uc
+channel_VSS 60
+channel_Temp 61
+channel_DAC1 62
+channel_FVR_buf1 63
+]
+"71 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\main.c
+[e E12854 mtouch_button_names `uc
+Button1 0
+Button2 1
+]
+"9 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\application.c
+[e E12854 mtouch_button_names `uc
+Button1 0
+Button2 1
+]
+"4
+[v _applicationTask applicationTask `(v  1 e 1 0 ]
+"9
+[v _processButtonTouch processButtonTouch `(v  1 e 1 0 ]
+"41
+[v _processButtonRelease processButtonRelease `(v  1 e 1 0 ]
+"115
+[v _getBrightnessLevel getBrightnessLevel `(uc  1 e 1 0 ]
+"141
+[v _getColorMask getColorMask `(um  1 e 3 0 ]
+"163
+[v _updateLED updateLED `(v  1 e 1 0 ]
+"1 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+[v i2_abs abs `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"49 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"63 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+"299
+[v _ADCC_ThresholdISR ADCC_ThresholdISR `(v  1 e 1 0 ]
+"308
+[v _ADCC_SetADTIInterruptHandler ADCC_SetADTIInterruptHandler `(v  1 e 1 0 ]
+"311
+[v _ADCC_DefaultInterruptHandler ADCC_DefaultInterruptHandler `(v  1 e 1 0 ]
+"52 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"58
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+"50 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"62
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"76
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"82 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Initialize MTOUCH_Initialize `(v  1 e 1 0 ]
+"97
+[v _MTOUCH_Service_Mainloop MTOUCH_Service_Mainloop `(a  1 e 1 0 ]
+"128
+[v _MTOUCH_Tick MTOUCH_Tick `(v  1 e 1 0 ]
+"138
+[v _MTOUCH_needReburst MTOUCH_needReburst `(a  1 s 1 MTOUCH_needReburst ]
+"151 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_Initialize MTOUCH_Button_Initialize `(v  1 e 1 0 ]
+"163
+[v _MTOUCH_Button_InitializeAll MTOUCH_Button_InitializeAll `(v  1 e 1 0 ]
+"181
+[v _MTOUCH_Button_ServiceAll MTOUCH_Button_ServiceAll `(v  1 e 1 0 ]
+"192
+[v _Button_Service Button_Service `(v  1 s 1 Button_Service ]
+"209
+[v _Button_State_Initializing Button_State_Initializing `(v  1 s 1 Button_State_Initializing ]
+"229
+[v _Button_State_NotPressed Button_State_NotPressed `(v  1 s 1 Button_State_NotPressed ]
+"265
+[v _Button_State_Pressed Button_State_Pressed `(v  1 s 1 Button_State_Pressed ]
+"289
+[v _MTOUCH_Button_Tick MTOUCH_Button_Tick `(v  1 e 1 0 ]
+"297
+[v _Button_Tick_helper Button_Tick_helper `(v  1 s 1 Button_Tick_helper ]
+"366
+[v _MTOUCH_Button_isPressed MTOUCH_Button_isPressed `(a  1 e 1 0 ]
+"391
+[v _Button_Deviation_Update Button_Deviation_Update `(v  1 s 1 Button_Deviation_Update ]
+"440
+[v _Button_Reading_Update Button_Reading_Update `(v  1 s 1 Button_Reading_Update ]
+"454
+[v _Button_Reading_Update_Helper Button_Reading_Update_Helper `(v  1 s 1 Button_Reading_Update_Helper ]
+"467
+[v _Button_Baseline_Initialize Button_Baseline_Initialize `(v  1 s 1 Button_Baseline_Initialize ]
+"473
+[v _Button_Baseline_Update Button_Baseline_Update `(v  1 s 1 Button_Baseline_Update ]
+"497
+[v _Button_Baseline_Get_helper Button_Baseline_Get_helper `(us  1 s 2 Button_Baseline_Get_helper ]
+"519
+[v _Button_DefaultCallback Button_DefaultCallback `(v  1 s 1 Button_DefaultCallback ]
+"520
+[v _MTOUCH_Button_SetPressedCallback MTOUCH_Button_SetPressedCallback `(v  1 e 1 0 ]
+"524
+[v _MTOUCH_Button_SetNotPressedCallback MTOUCH_Button_SetNotPressedCallback `(v  1 e 1 0 ]
+"203 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Initialize MTOUCH_Sensor_Initialize `(E12863  1 e 1 0 ]
+"212
+[v _Sensor_SetTrisBit Sensor_SetTrisBit `(v  1 s 1 Sensor_SetTrisBit ]
+[v i2_Sensor_SetTrisBit Sensor_SetTrisBit `(v  1 s 1 i2_Sensor_SetTrisBit ]
+"232
+[v _MTOUCH_Sensor_ADCC_Initialize MTOUCH_Sensor_ADCC_Initialize `(v  1 e 1 0 ]
+"275
+[v _MTOUCH_Sensor_InitializeAll MTOUCH_Sensor_InitializeAll `(v  1 e 1 0 ]
+"288
+[v _MTOUCH_Sensor_isSamplingComplete MTOUCH_Sensor_isSamplingComplete `(a  1 e 1 0 ]
+"307
+[v _MTOUCH_Sensor_SampleAll MTOUCH_Sensor_SampleAll `(a  1 e 1 0 ]
+"350
+[v _MTOUCH_Sensor_Scan_Initialize MTOUCH_Sensor_Scan_Initialize `(v  1 e 1 0 ]
+"362
+[v _Sensor_scheduleNextScan Sensor_scheduleNextScan `(v  1 s 1 Sensor_scheduleNextScan ]
+[v i2_Sensor_scheduleNextScan Sensor_scheduleNextScan `(v  1 s 1 i2_Sensor_scheduleNextScan ]
+"425
+[v _Sensor_autoCalibration Sensor_autoCalibration `(E12863  1 s 1 Sensor_autoCalibration ]
+"475
+[v _MTOUCH_Sensor_postAcquisitionProcess MTOUCH_Sensor_postAcquisitionProcess `(v  1 e 1 0 ]
+"495
+[v _ADCC_ThresholdISR_mTouch ADCC_ThresholdISR_mTouch `(v  1 e 1 0 ]
+"508
+[v _MTOUCH_Sensor_Service MTOUCH_Sensor_Service `T(v  1 s 1 MTOUCH_Sensor_Service ]
+"558
+[v _Sensor_setSamplePeriod Sensor_setSamplePeriod `(v  1 s 1 Sensor_setSamplePeriod ]
+"570
+[v _MTOUCH_Sensor_RawSample_Get MTOUCH_Sensor_RawSample_Get `(us  1 e 2 0 ]
+"589
+[v _Sensor_RawSample_Update Sensor_RawSample_Update `(v  1 s 1 Sensor_RawSample_Update ]
+"606
+[v _medianFilter medianFilter `(us  1 s 2 medianFilter ]
+"647
+[v _Sensor_FrequencyHopping Sensor_FrequencyHopping `(v  1 s 1 Sensor_FrequencyHopping ]
+"661
+[v _Sensor_FrequencyHopping_Autotune_Process Sensor_FrequencyHopping_Autotune_Process `(v  1 s 1 Sensor_FrequencyHopping_Autotune_Process ]
+"738
+[v _Sensor_DefaultCallback Sensor_DefaultCallback `(v  1 s 1 Sensor_DefaultCallback ]
+"759
+[v _MTOUCH_Sensor_Enable MTOUCH_Sensor_Enable `(v  1 e 1 0 ]
+"765
+[v _MTOUCH_Sensor_isEnabled MTOUCH_Sensor_isEnabled `(a  1 e 1 0 ]
+[v i2_MTOUCH_Sensor_isEnabled MTOUCH_Sensor_isEnabled `(a  1 e 1 0 ]
+"821
+[v _MTOUCH_Sensor_Calibrate MTOUCH_Sensor_Calibrate `(v  1 e 1 0 ]
+"829
+[v _MTOUCH_Sensor_isCalibrated MTOUCH_Sensor_isCalibrated `(a  1 e 1 0 ]
+"837
+[v _Sensor_isCalibrated Sensor_isCalibrated `T(a  1 s 1 Sensor_isCalibrated ]
+[v i2_Sensor_isCalibrated Sensor_isCalibrated `T(a  1 s 1 i2_Sensor_isCalibrated ]
+"842
+[v _Sensor_setCalibrated Sensor_setCalibrated `(v  1 s 1 Sensor_setCalibrated ]
+"848
+[v _Sensor_setCalibratAcqTime Sensor_setCalibratAcqTime `(v  1 s 1 Sensor_setCalibratAcqTime ]
+"855
+[v _Sensor_isCalibratingAcqTime Sensor_isCalibratingAcqTime `T(a  1 s 1 Sensor_isCalibratingAcqTime ]
+[v i2_Sensor_isCalibratingAcqTime Sensor_isCalibratingAcqTime `T(a  1 s 1 i2_Sensor_isCalibratingAcqTime ]
+"868
+[v _MTOUCH_Sensor_Sampled_ResetAll MTOUCH_Sensor_Sampled_ResetAll `(v  1 e 1 0 ]
+"877
+[v _MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(a  1 e 1 0 ]
+[v i2_MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(a  1 e 1 0 ]
+"885
+[v _Sensor_Sampled_Reset Sensor_Sampled_Reset `T(v  1 s 1 Sensor_Sampled_Reset ]
+"890
+[v _Sensor_setSampled Sensor_setSampled `T(v  1 s 1 Sensor_setSampled ]
+"895
+[v _MTOUCH_Sensor_isSampling MTOUCH_Sensor_isSampling `(a  1 e 1 0 ]
+"930
+[v _MTOUCH_Sensor_Oversampling_Get MTOUCH_Sensor_Oversampling_Get `(uc  1 e 1 0 ]
+"938
+[v _MTOUCH_Sensor_Oversampling_Set MTOUCH_Sensor_Oversampling_Set `(v  1 e 1 0 ]
+"55 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"64 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+"99
+[v _TMR1_StartTimer TMR1_StartTimer `(v  1 e 1 0 ]
+"105
+[v _TMR1_StopTimer TMR1_StopTimer `(v  1 e 1 0 ]
+"111
+[v _TMR1_ReadTimer TMR1_ReadTimer `(us  1 e 2 0 ]
+"127
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+[v i2_TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+"164
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+"178
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+"182
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+"64 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/tmr3.c
+[v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
+"99
+[v _TMR3_StartTimer TMR3_StartTimer `(v  1 e 1 0 ]
+"105
+[v _TMR3_StopTimer TMR3_StopTimer `(v  1 e 1 0 ]
+"111
+[v _TMR3_ReadTimer TMR3_ReadTimer `(us  1 e 2 0 ]
+"127
+[v _TMR3_WriteTimer TMR3_WriteTimer `(v  1 e 1 0 ]
+[v i2_TMR3_WriteTimer TMR3_WriteTimer `(v  1 e 1 0 ]
+"164
+[v _TMR3_ISR TMR3_ISR `(v  1 e 1 0 ]
+"178
+[v _TMR3_SetInterruptHandler TMR3_SetInterruptHandler `(v  1 e 1 0 ]
+"182
+[v _TMR3_DefaultInterruptHandler TMR3_DefaultInterruptHandler `(v  1 e 1 0 ]
+"15 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\RGB4x4Click.c
+[v _reverse reverse `(uc  1 e 1 0 ]
+"22
+[v _FillScreen FillScreen `(v  1 e 1 0 ]
+"29
+[v _RGBLed_SetDiode RGBLed_SetDiode `(v  1 e 1 0 ]
+"40
+[v _RGBLed_InitDiode RGBLed_InitDiode `(v  1 e 1 0 ]
+"46
+[v _RGBLed_SetColor RGBLed_SetColor `(v  1 e 1 0 ]
+"196
+[v _RGBLed_ResetDelay RGBLed_ResetDelay `(v  1 e 1 0 ]
+"33 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X/main.h
+[v _gBrightnessLevel gBrightnessLevel `VEuc  1 e 1 0 ]
+"34
+[v _gColorMask gColorMask `VEuc  1 e 1 0 ]
+"35
+[v _gButton1Pressed gButton1Pressed `VEa  1 e 1 0 ]
+"36
+[v _gButton2Pressed gButton2Pressed `VEa  1 e 1 0 ]
+"37
+[v _gWaitingForButton1Release gWaitingForButton1Release `VEa  1 e 1 0 ]
+"38
+[v _gWaitingForButton2Release gWaitingForButton2Release `VEa  1 e 1 0 ]
+"55 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X/RGB4x4Click.h
+[v _DiodeArray DiodeArray `[16]ul  1 e 64 0 ]
+[s S200 . 1 `uc 1 ADIE 1 0 :1:0 
+`uc 1 ADTIE 1 0 :1:1 
+`uc 1 . 1 0 :4:2 
+`uc 1 CSWIE 1 0 :1:6 
+`uc 1 OSCFIE 1 0 :1:7 
+]
+"15274 C:/Users/I51005/.mchp_packs/Microchip/PIC18F-Q_DFP/1.7.135/xc8\pic\include\proc\pic18f47q10.h
+[u S206 . 1 `S200 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES206  1 e 1 @3774 ]
+[s S1350 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 TMR3IE 1 0 :1:2 
+`uc 1 TMR4IE 1 0 :1:3 
+`uc 1 TMR5IE 1 0 :1:4 
+`uc 1 TMR6IE 1 0 :1:5 
+]
+"15442
+[u S1357 . 1 `S1350 1 . 1 0 ]
+[v _PIE4bits PIE4bits `VES1357  1 e 1 @3777 ]
+[s S185 . 1 `uc 1 ADIF 1 0 :1:0 
+`uc 1 ADTIF 1 0 :1:1 
+`uc 1 . 1 0 :4:2 
+`uc 1 CSWIF 1 0 :1:6 
+`uc 1 OSCFIF 1 0 :1:7 
+]
+"15691
+[u S191 . 1 `S185 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES191  1 e 1 @3782 ]
+[s S1333 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 TMR3IF 1 0 :1:2 
+`uc 1 TMR4IF 1 0 :1:3 
+`uc 1 TMR5IF 1 0 :1:4 
+`uc 1 TMR6IF 1 0 :1:5 
+]
+"15859
+[u S1340 . 1 `S1333 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES1340  1 e 1 @3785 ]
+"16627
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @3795 ]
+"16767
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @3797 ]
+"16919
+[v _OSCEN OSCEN `VEuc  1 e 1 @3799 ]
+"16970
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3800 ]
+"17028
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @3801 ]
+"17199
+[v _PMD0 PMD0 `VEuc  1 e 1 @3804 ]
+"17276
+[v _PMD1 PMD1 `VEuc  1 e 1 @3805 ]
+"17340
+[v _PMD2 PMD2 `VEuc  1 e 1 @3806 ]
+"17385
+[v _PMD3 PMD3 `VEuc  1 e 1 @3807 ]
+"17447
+[v _PMD4 PMD4 `VEuc  1 e 1 @3808 ]
+"17500
+[v _PMD5 PMD5 `VEuc  1 e 1 @3809 ]
+"19271
+[v _INLVLA INLVLA `VEuc  1 e 1 @3848 ]
+"19333
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @3849 ]
+"19395
+[v _ODCONA ODCONA `VEuc  1 e 1 @3850 ]
+"19457
+[v _WPUA WPUA `VEuc  1 e 1 @3851 ]
+"19519
+[v _ANSELA ANSELA `VEuc  1 e 1 @3852 ]
+"19767
+[v _INLVLB INLVLB `VEuc  1 e 1 @3856 ]
+"19829
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @3857 ]
+"19891
+[v _ODCONB ODCONB `VEuc  1 e 1 @3858 ]
+"19953
+[v _WPUB WPUB `VEuc  1 e 1 @3859 ]
+"20015
+[v _ANSELB ANSELB `VEuc  1 e 1 @3860 ]
+"20263
+[v _INLVLC INLVLC `VEuc  1 e 1 @3864 ]
+"20325
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @3865 ]
+"20387
+[v _ODCONC ODCONC `VEuc  1 e 1 @3866 ]
+"20449
+[v _WPUC WPUC `VEuc  1 e 1 @3867 ]
+"20511
+[v _ANSELC ANSELC `VEuc  1 e 1 @3868 ]
+"20573
+[v _INLVLD INLVLD `VEuc  1 e 1 @3869 ]
+"20635
+[v _SLRCOND SLRCOND `VEuc  1 e 1 @3870 ]
+"20697
+[v _ODCOND ODCOND `VEuc  1 e 1 @3871 ]
+"20759
+[v _WPUD WPUD `VEuc  1 e 1 @3872 ]
+"20821
+[v _ANSELD ANSELD `VEuc  1 e 1 @3873 ]
+"20997
+[v _INLVLE INLVLE `VEuc  1 e 1 @3877 ]
+"21035
+[v _SLRCONE SLRCONE `VEuc  1 e 1 @3878 ]
+"21067
+[v _ODCONE ODCONE `VEuc  1 e 1 @3879 ]
+"21099
+[v _WPUE WPUE `VEuc  1 e 1 @3880 ]
+"21137
+[v _ANSELE ANSELE `VEuc  1 e 1 @3881 ]
+"24377
+[v _ADACT ADACT `VEuc  1 e 1 @3921 ]
+"24429
+[v _ADCLK ADCLK `VEuc  1 e 1 @3922 ]
+"24487
+[v _ADREF ADREF `VEuc  1 e 1 @3923 ]
+"24528
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @3924 ]
+[s S1246 . 1 `uc 1 ADDSEN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 ADGPOL 1 0 :1:5 
+`uc 1 ADIPEN 1 0 :1:6 
+`uc 1 ADPPOL 1 0 :1:7 
+]
+"24542
+[u S1252 . 1 `S1246 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES1252  1 e 1 @3924 ]
+"24567
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @3925 ]
+[s S1182 . 1 `uc 1 ADMD 1 0 :3:0 
+`uc 1 ADACLR 1 0 :1:3 
+`uc 1 ADCRS 1 0 :3:4 
+`uc 1 ADPSIS 1 0 :1:7 
+]
+"24589
+[s S1187 . 1 `uc 1 ADMD0 1 0 :1:0 
+`uc 1 ADMD1 1 0 :1:1 
+`uc 1 ADMD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCRS0 1 0 :1:4 
+`uc 1 ADCRS1 1 0 :1:5 
+`uc 1 ADCRS2 1 0 :1:6 
+]
+[u S1195 . 1 `S1182 1 . 1 0 `S1187 1 . 1 0 ]
+[v _ADCON2bits ADCON2bits `VES1195  1 e 1 @3925 ]
+"24644
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @3926 ]
+[s S1153 . 1 `uc 1 ADTMD 1 0 :3:0 
+`uc 1 ADSOI 1 0 :1:3 
+`uc 1 ADCALC 1 0 :3:4 
+]
+"24665
+[s S1157 . 1 `uc 1 ADTMD0 1 0 :1:0 
+`uc 1 ADTMD1 1 0 :1:1 
+`uc 1 ADTMD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCALC0 1 0 :1:4 
+`uc 1 ADCALC1 1 0 :1:5 
+`uc 1 ADCALC2 1 0 :1:6 
+]
+[u S1165 . 1 `S1153 1 . 1 0 `S1157 1 . 1 0 ]
+[v _ADCON3bits ADCON3bits `VES1165  1 e 1 @3926 ]
+"24715
+[v _ADACQ ADACQ `VEuc  1 e 1 @3927 ]
+"24785
+[v _ADCAP ADCAP `VEuc  1 e 1 @3928 ]
+"24837
+[v _ADPRE ADPRE `VEuc  1 e 1 @3929 ]
+"24907
+[v _ADPCH ADPCH `VEuc  1 e 1 @3930 ]
+"24965
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @3931 ]
+[s S275 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+"25000
+[s S284 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+]
+[s S288 . 1 `uc 1 DONE 1 0 :1:0 
+]
+[s S290 . 1 `uc 1 GO_NOT_DONE 1 0 :1:0 
+]
+[s S292 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+]
+[s S294 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 ADCAL 1 0 :1:7 
+]
+[u S297 . 1 `S275 1 . 1 0 `S284 1 . 1 0 `S288 1 . 1 0 `S290 1 . 1 0 `S292 1 . 1 0 `S294 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES297  1 e 1 @3931 ]
+"25067
+[v _ADPREVL ADPREVL `VEuc  1 e 1 @3932 ]
+"25137
+[v _ADPREVH ADPREVH `VEuc  1 e 1 @3933 ]
+"25214
+[v _ADRESL ADRESL `VEuc  1 e 1 @3934 ]
+"25284
+[v _ADRESH ADRESH `VEuc  1 e 1 @3935 ]
+"25346
+[v _ADSTAT ADSTAT `VEuc  1 e 1 @3936 ]
+[s S1214 . 1 `uc 1 ADSTAT 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADMATH 1 0 :1:4 
+`uc 1 ADLTHR 1 0 :1:5 
+`uc 1 ADUTHR 1 0 :1:6 
+`uc 1 ADAOV 1 0 :1:7 
+]
+"25366
+[s S1221 . 1 `uc 1 ADSTAT0 1 0 :1:0 
+`uc 1 ADSTAT1 1 0 :1:1 
+`uc 1 ADSTAT2 1 0 :1:2 
+]
+[u S1225 . 1 `S1214 1 . 1 0 `S1221 1 . 1 0 ]
+[v _ADSTATbits ADSTATbits `VES1225  1 e 1 @3936 ]
+"25411
+[v _ADRPT ADRPT `VEuc  1 e 1 @3937 ]
+"25481
+[v _ADCNT ADCNT `VEuc  1 e 1 @3938 ]
+"25558
+[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @3939 ]
+"25628
+[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @3940 ]
+"25705
+[v _ADLTHL ADLTHL `VEuc  1 e 1 @3941 ]
+"25775
+[v _ADLTHH ADLTHH `VEuc  1 e 1 @3942 ]
+"25852
+[v _ADUTHL ADUTHL `VEuc  1 e 1 @3943 ]
+"25922
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @3944 ]
+"25999
+[v _ADERRL ADERRL `VEuc  1 e 1 @3945 ]
+"26069
+[v _ADERRH ADERRH `VEuc  1 e 1 @3946 ]
+"26139
+[v _ADACC ADACC `VEus  1 e 2 @3947 ]
+"26146
+[v _ADACCL ADACCL `VEuc  1 e 1 @3947 ]
+"26216
+[v _ADACCH ADACCH `VEuc  1 e 1 @3948 ]
+"26286
+[v _ADFLTR ADFLTR `VEus  1 e 2 @3949 ]
+"26293
+[v _ADFLTRL ADFLTRL `VEuc  1 e 1 @3949 ]
+"26363
+[v _ADFLTRH ADFLTRH `VEuc  1 e 1 @3950 ]
+"27535
+[v _LATA LATA `VEuc  1 e 1 @3970 ]
+[s S2063 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"27552
+[u S2072 . 1 `S2063 1 . 1 0 ]
+[v _LATAbits LATAbits `VES2072  1 e 1 @3970 ]
+"27597
+[v _LATB LATB `VEuc  1 e 1 @3971 ]
+[s S1952 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"27614
+[u S1961 . 1 `S1952 1 . 1 0 ]
+[v _LATBbits LATBbits `VES1961  1 e 1 @3971 ]
+"27659
+[v _LATC LATC `VEuc  1 e 1 @3972 ]
+"27721
+[v _LATD LATD `VEuc  1 e 1 @3973 ]
+[s S1931 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"27738
+[u S1940 . 1 `S1931 1 . 1 0 ]
+[v _LATDbits LATDbits `VES1940  1 e 1 @3973 ]
+"27783
+[v _LATE LATE `VEuc  1 e 1 @3974 ]
+"27815
+[v _TRISA TRISA `VEuc  1 e 1 @3975 ]
+[s S130 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"27837
+[u S139 . 1 `S130 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES139  1 e 1 @3975 ]
+"27937
+[v _TRISB TRISB `VEuc  1 e 1 @3976 ]
+"28059
+[v _TRISC TRISC `VEuc  1 e 1 @3977 ]
+"28181
+[v _TRISD TRISD `VEuc  1 e 1 @3978 ]
+[s S151 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"28203
+[u S160 . 1 `S151 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES160  1 e 1 @3978 ]
+"28303
+[v _TRISE TRISE `VEuc  1 e 1 @3979 ]
+"34373
+[v _TMR3L TMR3L `VEuc  1 e 1 @4038 ]
+"34543
+[v _TMR3H TMR3H `VEuc  1 e 1 @4039 ]
+"34663
+[v _T3CON T3CON `VEuc  1 e 1 @4040 ]
+[s S1378 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_SYNC 1 0 :1:2 
+]
+"34702
+[s S1381 . 1 `uc 1 ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 nSYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CKPS 1 0 :2:4 
+]
+"34702
+[s S1591 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T3SYNC 1 0 :1:2 
+]
+"34702
+[s S1594 . 1 `uc 1 TMR3ON 1 0 :1:0 
+`uc 1 T3RD16 1 0 :1:1 
+`uc 1 nT3SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T3CKPS0 1 0 :1:4 
+`uc 1 T3CKPS1 1 0 :1:5 
+]
+"34702
+[s S1397 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+]
+"34702
+[s S1605 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RD163 1 0 :1:1 
+]
+"34702
+[u S1608 . 1 `S1378 1 . 1 0 `S1381 1 . 1 0 `S1591 1 . 1 0 `S1594 1 . 1 0 `S1397 1 . 1 0 `S1605 1 . 1 0 ]
+"34702
+"34702
+[v _T3CONbits T3CONbits `VES1608  1 e 1 @4040 ]
+"34777
+[v _T3GCON T3GCON `VEuc  1 e 1 @4041 ]
+[s S1438 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 GGO_NOT_DONE 1 0 :1:3 
+]
+"34819
+[s S1441 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GVAL 1 0 :1:2 
+`uc 1 GGO_nDONE 1 0 :1:3 
+`uc 1 GSPM 1 0 :1:4 
+`uc 1 GTM 1 0 :1:5 
+`uc 1 GPOL 1 0 :1:6 
+`uc 1 GE 1 0 :1:7 
+]
+"34819
+[s S1653 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T3GGO_NOT_DONE 1 0 :1:3 
+]
+"34819
+[s S1656 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T3GVAL 1 0 :1:2 
+`uc 1 T3GGO_nDONE 1 0 :1:3 
+`uc 1 T3GSPM 1 0 :1:4 
+`uc 1 T3GTM 1 0 :1:5 
+`uc 1 T3GPOL 1 0 :1:6 
+`uc 1 T3GE 1 0 :1:7 
+]
+"34819
+[s S1664 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T3GGO 1 0 :1:3 
+]
+"34819
+[u S1667 . 1 `S1438 1 . 1 0 `S1441 1 . 1 0 `S1653 1 . 1 0 `S1656 1 . 1 0 `S1664 1 . 1 0 ]
+"34819
+"34819
+[v _T3GCONbits T3GCONbits `VES1667  1 e 1 @4041 ]
+"35009
+[v _T3GATE T3GATE `VEuc  1 e 1 @4042 ]
+"35151
+[v _T3CLK T3CLK `VEuc  1 e 1 @4043 ]
+"35300
+[v _TMR1L TMR1L `VEuc  1 e 1 @4044 ]
+"35470
+[v _TMR1H TMR1H `VEuc  1 e 1 @4045 ]
+"35590
+[v _T1CON T1CON `VEuc  1 e 1 @4046 ]
+"35629
+"35629
+[s S1387 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+]
+"35629
+[s S1390 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 T1RD16 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+"35629
+"35629
+[s S1401 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RD161 1 0 :1:1 
+]
+"35629
+[u S1404 . 1 `S1378 1 . 1 0 `S1381 1 . 1 0 `S1387 1 . 1 0 `S1390 1 . 1 0 `S1397 1 . 1 0 `S1401 1 . 1 0 ]
+"35629
+"35629
+[v _T1CONbits T1CONbits `VES1404  1 e 1 @4046 ]
+"35704
+[v _T1GCON T1GCON `VEuc  1 e 1 @4047 ]
+"35746
+"35746
+[s S1449 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1GGO_NOT_DONE 1 0 :1:3 
+]
+"35746
+[s S1452 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1GVAL 1 0 :1:2 
+`uc 1 T1GGO_nDONE 1 0 :1:3 
+`uc 1 T1GSPM 1 0 :1:4 
+`uc 1 T1GTM 1 0 :1:5 
+`uc 1 T1GPOL 1 0 :1:6 
+`uc 1 T1GE 1 0 :1:7 
+]
+"35746
+[s S1460 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1GGO 1 0 :1:3 
+]
+"35746
+[u S1463 . 1 `S1438 1 . 1 0 `S1441 1 . 1 0 `S1449 1 . 1 0 `S1452 1 . 1 0 `S1460 1 . 1 0 ]
+"35746
+"35746
+[v _T1GCONbits T1GCONbits `VES1463  1 e 1 @4047 ]
+"35936
+[v _T1GATE T1GATE `VEuc  1 e 1 @4048 ]
+"36078
+[v _T1CLK T1CLK `VEuc  1 e 1 @4049 ]
+[s S1772 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"37562
+[s S1780 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"37562
+[s S1784 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+"37562
+[u S1788 . 1 `S1772 1 . 1 0 `S1780 1 . 1 0 `S1784 1 . 1 0 ]
+"37562
+"37562
+[v _INTCONbits INTCONbits `VES1788  1 e 1 @4082 ]
+"40029
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"57 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/adcc.c
+[v _ADCC_ADTI_InterruptHandler ADCC_ADTI_InterruptHandler `*.38(v  1 e 3 0 ]
+"52 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch.c
+[v _mtouch_time_toScan mtouch_time_toScan `a  1 s 1 mtouch_time_toScan ]
+"53
+[v _mtouch_request_init mtouch_request_init `a  1 s 1 mtouch_request_init ]
+[s S720 . 16 `CE12923 1 name 1 0 `CE12860 1 sensor 1 1 `E12985 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"82 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _mtouch_button_init mtouch_button_init `C[2]S720  1 e 32 0 ]
+"102
+[v _mtouch_button mtouch_button `[2]S720  1 s 32 mtouch_button ]
+"129
+[v _callback_pressed callback_pressed `*.38(v  1 s 3 callback_pressed ]
+"130
+[v _callback_notPressed callback_notPressed `*.38(v  1 s 3 callback_notPressed ]
+"138
+[v _Button_StateMachine Button_StateMachine `[3]*.38(v  1 e 9 0 ]
+"149 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _callback_sampled callback_sampled `*.38(v  1 s 3 callback_sampled ]
+"156
+[v _sensor_medianBuffer sensor_medianBuffer `[2][3]us  1 s 12 sensor_medianBuffer ]
+"157
+[v _packet_sample packet_sample `[2]us  1 s 4 packet_sample ]
+"158
+[v _currentScanSensor currentScanSensor `E12860  1 s 1 currentScanSensor ]
+"159
+[v _sampling_flag sampling_flag `a  1 s 1 sampling_flag ]
+"160
+[v _scanInterrupted scanInterrupted `VEa  1 s 1 scanInterrupted ]
+"161
+[v _lowpowerActivated lowpowerActivated `a  1 s 1 lowpowerActivated ]
+"168
+[v _freq_index freq_index `uc  1 s 1 freq_index ]
+"169
+[v _freq_hop freq_hop `[3]uc  1 s 3 freq_hop ]
+"170
+[v _sample_delay sample_delay `uc  1 s 1 sample_delay ]
+[s S93 . 9 `CE12860 1 sensor_name 1 0 `Cuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+"177
+[v _mtouch_sensor_init mtouch_sensor_init `C[2]S93  1 e 18 0 ]
+"196
+[v _mtouch_sensor mtouch_sensor `[2]S93  1 s 18 mtouch_sensor ]
+"57 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
+"58
+[v _TMR1_InterruptHandler TMR1_InterruptHandler `*.38(v  1 e 3 0 ]
+"57 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/tmr3.c
+[v _timer3ReloadVal timer3ReloadVal `VEus  1 e 2 0 ]
+"58
+[v _TMR3_InterruptHandler TMR3_InterruptHandler `*.38(v  1 e 3 0 ]
+"49 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"77
+} 0
+"4 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\application.c
+[v _applicationTask applicationTask `(v  1 e 1 0 ]
+{
+"7
+} 0
+"97 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Service_Mainloop MTOUCH_Service_Mainloop `(a  1 e 1 0 ]
+{
+"121
+} 0
+"138
+[v _MTOUCH_needReburst MTOUCH_needReburst `(a  1 s 1 MTOUCH_needReburst ]
+{
+"143
+} 0
+"128
+[v _MTOUCH_Tick MTOUCH_Tick `(v  1 e 1 0 ]
+{
+"131
+} 0
+"289 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_Tick MTOUCH_Button_Tick `(v  1 e 1 0 ]
+{
+"291
+[v MTOUCH_Button_Tick@i i `uc  1 a 1 25 ]
+"296
+} 0
+"297
+[v _Button_Tick_helper Button_Tick_helper `(v  1 s 1 Button_Tick_helper ]
+{
+[s S720 . 16 `CE12923 1 name 1 0 `CE12860 1 sensor 1 1 `E12985 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Tick_helper@button button `*.39S720  1 p 2 21 ]
+"308
+} 0
+"307 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_SampleAll MTOUCH_Sensor_SampleAll `(a  1 e 1 0 ]
+{
+"319
+} 0
+"647
+[v _Sensor_FrequencyHopping Sensor_FrequencyHopping `(v  1 s 1 Sensor_FrequencyHopping ]
+{
+"653
+} 0
+"558
+[v _Sensor_setSamplePeriod Sensor_setSamplePeriod `(v  1 s 1 Sensor_setSamplePeriod ]
+{
+"564
+} 0
+"661
+[v _Sensor_FrequencyHopping_Autotune_Process Sensor_FrequencyHopping_Autotune_Process `(v  1 s 1 Sensor_FrequencyHopping_Autotune_Process ]
+{
+"666
+[v Sensor_FrequencyHopping_Autotune_Process@maxVariance maxVariance `us  1 a 2 36 ]
+[v Sensor_FrequencyHopping_Autotune_Process@variance variance `us  1 a 2 34 ]
+"664
+[v Sensor_FrequencyHopping_Autotune_Process@frequencyIndex frequencyIndex `uc  1 a 1 40 ]
+"665
+[v Sensor_FrequencyHopping_Autotune_Process@selectedFrequency selectedFrequency `uc  1 a 1 39 ]
+"663
+[v Sensor_FrequencyHopping_Autotune_Process@sensor sensor `E12860  1 a 1 38 ]
+"665
+[v Sensor_FrequencyHopping_Autotune_Process@newfrequencyFound newfrequencyFound `uc  1 a 1 33 ]
+"669
+[v Sensor_FrequencyHopping_Autotune_Process@varianceOverLimitCounter varianceOverLimitCounter `[3]uc  1 s 3 varianceOverLimitCounter ]
+"731
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 21 ]
+"4
+} 0
+"475 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_postAcquisitionProcess MTOUCH_Sensor_postAcquisitionProcess `(v  1 e 1 0 ]
+{
+"477
+[v MTOUCH_Sensor_postAcquisitionProcess@name name `E12860  1 a 1 33 ]
+"487
+} 0
+"589
+[v _Sensor_RawSample_Update Sensor_RawSample_Update `(v  1 s 1 Sensor_RawSample_Update ]
+{
+"591
+[v Sensor_RawSample_Update@result result `us  1 a 2 31 ]
+[s S93 . 9 `CE12860 1 sensor_name 1 0 `Cuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+"589
+[v Sensor_RawSample_Update@sensor sensor `*.39S93  1 p 2 29 ]
+"603
+} 0
+"606
+[v _medianFilter medianFilter `(us  1 s 2 medianFilter ]
+{
+[v medianFilter@sensor sensor `E12860  1 a 1 wreg ]
+[v medianFilter@sensor sensor `E12860  1 a 1 wreg ]
+"608
+[v medianFilter@bufferIndex bufferIndex `[2]uc  1 s 2 bufferIndex ]
+"610
+[v medianFilter@sensor sensor `E12860  1 a 1 28 ]
+"640
+} 0
+"738
+[v _Sensor_DefaultCallback Sensor_DefaultCallback `(v  1 s 1 Sensor_DefaultCallback ]
+{
+} 0
+"288
+[v _MTOUCH_Sensor_isSamplingComplete MTOUCH_Sensor_isSamplingComplete `(a  1 e 1 0 ]
+{
+"290
+[v MTOUCH_Sensor_isSamplingComplete@sensor sensor `E12860  1 a 1 31 ]
+"305
+} 0
+"362
+[v _Sensor_scheduleNextScan Sensor_scheduleNextScan `(v  1 s 1 Sensor_scheduleNextScan ]
+{
+[s S93 . 9 `CE12860 1 sensor_name 1 0 `Cuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+"364
+[v Sensor_scheduleNextScan@sensor sensor `*.39S93  1 a 2 29 ]
+"365
+[v Sensor_scheduleNextScan@skipScan skipScan `a  1 a 1 28 ]
+"366
+[v Sensor_scheduleNextScan@state state `a  1 a 1 27 ]
+"416
+} 0
+"855
+[v _Sensor_isCalibratingAcqTime Sensor_isCalibratingAcqTime `T(a  1 s 1 Sensor_isCalibratingAcqTime ]
+{
+[s S93 . 9 `CE12860 1 sensor_name 1 0 `Cuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_isCalibratingAcqTime@sensor sensor `*.39S93  1 p 2 21 ]
+"859
+} 0
+"837
+[v _Sensor_isCalibrated Sensor_isCalibrated `T(a  1 s 1 Sensor_isCalibrated ]
+{
+[s S93 . 9 `CE12860 1 sensor_name 1 0 `Cuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_isCalibrated@sensor sensor `*.39S93  1 p 2 21 ]
+"840
+} 0
+"212
+[v _Sensor_SetTrisBit Sensor_SetTrisBit `(v  1 s 1 Sensor_SetTrisBit ]
+{
+[v Sensor_SetTrisBit@sensor sensor `E12860  1 a 1 wreg ]
+[v Sensor_SetTrisBit@sensor sensor `E12860  1 a 1 wreg ]
+[v Sensor_SetTrisBit@TrisBit TrisBit `uc  1 p 1 21 ]
+[v Sensor_SetTrisBit@sensor sensor `E12860  1 a 1 24 ]
+"224
+} 0
+"765
+[v _MTOUCH_Sensor_isEnabled MTOUCH_Sensor_isEnabled `(a  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_isEnabled@sensor sensor `E12860  1 a 1 wreg ]
+[v MTOUCH_Sensor_isEnabled@sensor sensor `E12860  1 a 1 wreg ]
+"767
+[v MTOUCH_Sensor_isEnabled@sensor sensor `E12860  1 a 1 21 ]
+"771
+} 0
+"895
+[v _MTOUCH_Sensor_isSampling MTOUCH_Sensor_isSampling `(a  1 e 1 0 ]
+{
+"898
+} 0
+"181 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_ServiceAll MTOUCH_Button_ServiceAll `(v  1 e 1 0 ]
+{
+"183
+[v MTOUCH_Button_ServiceAll@button button `E12923  1 a 1 51 ]
+"190
+} 0
+"192
+[v _Button_Service Button_Service `(v  1 s 1 Button_Service ]
+{
+[v Button_Service@name name `E12923  1 a 1 wreg ]
+[s S720 . 16 `CE12923 1 name 1 0 `CE12860 1 sensor 1 1 `E12985 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"194
+[v Button_Service@button button `*.39S720  1 a 2 49 ]
+"192
+[v Button_Service@name name `E12923  1 a 1 wreg ]
+"194
+[v Button_Service@name name `E12923  1 a 1 48 ]
+"207
+} 0
+"877 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(a  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E12860  1 a 1 wreg ]
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E12860  1 a 1 wreg ]
+"879
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E12860  1 a 1 21 ]
+"883
+} 0
+"829
+[v _MTOUCH_Sensor_isCalibrated MTOUCH_Sensor_isCalibrated `(a  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_isCalibrated@sensor sensor `E12860  1 a 1 wreg ]
+[v MTOUCH_Sensor_isCalibrated@sensor sensor `E12860  1 a 1 wreg ]
+"831
+[v MTOUCH_Sensor_isCalibrated@sensor sensor `E12860  1 a 1 21 ]
+"835
+} 0
+"229 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_State_NotPressed Button_State_NotPressed `(v  1 s 1 Button_State_NotPressed ]
+{
+[s S720 . 16 `CE12923 1 name 1 0 `CE12860 1 sensor 1 1 `E12985 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_NotPressed@button button `*.39S720  1 p 2 40 ]
+"263
+} 0
+"209
+[v _Button_State_Initializing Button_State_Initializing `(v  1 s 1 Button_State_Initializing ]
+{
+[s S720 . 16 `CE12923 1 name 1 0 `CE12860 1 sensor 1 1 `E12985 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_Initializing@button button `*.39S720  1 p 2 40 ]
+"228
+} 0
+"265
+[v _Button_State_Pressed Button_State_Pressed `(v  1 s 1 Button_State_Pressed ]
+{
+[s S720 . 16 `CE12923 1 name 1 0 `CE12860 1 sensor 1 1 `E12985 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_Pressed@button button `*.39S720  1 p 2 40 ]
+"282
+} 0
+"9 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\application.c
+[v _processButtonTouch processButtonTouch `(v  1 e 1 0 ]
+{
+[v processButtonTouch@button button `E12854  1 a 1 wreg ]
+[v processButtonTouch@button button `E12854  1 a 1 wreg ]
+[v processButtonTouch@button button `E12854  1 a 1 23 ]
+"39
+} 0
+"519 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_DefaultCallback Button_DefaultCallback `(v  1 s 1 Button_DefaultCallback ]
+{
+} 0
+"41 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\application.c
+[v _processButtonRelease processButtonRelease `(v  1 e 1 0 ]
+{
+[v processButtonRelease@button button `E12854  1 a 1 wreg ]
+"42
+[v processButtonRelease@timerCount timerCount `us  1 a 2 38 ]
+"41
+[v processButtonRelease@button button `E12854  1 a 1 wreg ]
+[v processButtonRelease@button button `E12854  1 a 1 37 ]
+"113
+} 0
+"163
+[v _updateLED updateLED `(v  1 e 1 0 ]
+{
+[v updateLED@brightnessLevel brightnessLevel `uc  1 a 1 wreg ]
+"166
+[v updateLED@color color `um  1 a 3 31 ]
+"165
+[v updateLED@replicateBrightness replicateBrightness `um  1 a 3 28 ]
+"163
+[v updateLED@brightnessLevel brightnessLevel `uc  1 a 1 wreg ]
+[v updateLED@colorMask colorMask `um  1 p 3 14 ]
+"165
+[v updateLED@brightnessLevel brightnessLevel `uc  1 a 1 34 ]
+"168
+} 0
+"22 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\RGB4x4Click.c
+[v _FillScreen FillScreen `(v  1 e 1 0 ]
+{
+"23
+[v FillScreen@n n `uc  1 a 1 51 ]
+"22
+[v FillScreen@AColor AColor `ul  1 p 4 10 ]
+"27
+} 0
+"29
+[v _RGBLed_SetDiode RGBLed_SetDiode `(v  1 e 1 0 ]
+{
+[v RGBLed_SetDiode@ANum ANum `uc  1 a 1 wreg ]
+"30
+[v RGBLed_SetDiode@i i `uc  1 a 1 50 ]
+"29
+[v RGBLed_SetDiode@ANum ANum `uc  1 a 1 wreg ]
+[v RGBLed_SetDiode@AColor AColor `ul  1 p 4 0 ]
+[v RGBLed_SetDiode@AdiodeArray AdiodeArray `*.39ul  1 p 2 4 ]
+"31
+[v RGBLed_SetDiode@ANum ANum `uc  1 a 1 49 ]
+"38
+} 0
+"46
+[v _RGBLed_SetColor RGBLed_SetColor `(v  1 e 1 0 ]
+{
+"49
+[v RGBLed_SetColor@tempData tempData `ul  1 a 4 23 ]
+"46
+[v RGBLed_SetColor@AdiodeArray AdiodeArray `*.39ul  1 p 2 21 ]
+"194
+} 0
+"196
+[v _RGBLed_ResetDelay RGBLed_ResetDelay `(v  1 e 1 0 ]
+{
+"199
+} 0
+"40
+[v _RGBLed_InitDiode RGBLed_InitDiode `(v  1 e 1 0 ]
+{
+[v RGBLed_InitDiode@ARGBColor ARGBColor `ul  1 p 4 24 ]
+[v RGBLed_InitDiode@AdiodeArray AdiodeArray `*.39ul  1 p 2 28 ]
+"44
+} 0
+"15
+[v _reverse reverse `(uc  1 e 1 0 ]
+{
+[v reverse@b b `uc  1 a 1 wreg ]
+[v reverse@b b `uc  1 a 1 wreg ]
+[v reverse@b b `uc  1 a 1 23 ]
+"20
+} 0
+"141 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\application.c
+[v _getColorMask getColorMask `(um  1 e 3 0 ]
+{
+"161
+} 0
+"115
+[v _getBrightnessLevel getBrightnessLevel `(uc  1 e 1 0 ]
+{
+"139
+} 0
+"127 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/tmr3.c
+[v _TMR3_WriteTimer TMR3_WriteTimer `(v  1 e 1 0 ]
+{
+[v TMR3_WriteTimer@timerVal timerVal `us  1 p 2 21 ]
+"147
+} 0
+"105
+[v _TMR3_StopTimer TMR3_StopTimer `(v  1 e 1 0 ]
+{
+"109
+} 0
+"111
+[v _TMR3_ReadTimer TMR3_ReadTimer `(us  1 e 2 0 ]
+{
+"113
+[v TMR3_ReadTimer@readVal readVal `us  1 a 2 25 ]
+"115
+[v TMR3_ReadTimer@readValLow readValLow `uc  1 a 1 28 ]
+"114
+[v TMR3_ReadTimer@readValHigh readValHigh `uc  1 a 1 27 ]
+"125
+} 0
+"127 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/tmr1.c
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+{
+[v TMR1_WriteTimer@timerVal timerVal `us  1 p 2 21 ]
+"147
+} 0
+"105
+[v _TMR1_StopTimer TMR1_StopTimer `(v  1 e 1 0 ]
+{
+"109
+} 0
+"111
+[v _TMR1_ReadTimer TMR1_ReadTimer `(us  1 e 2 0 ]
+{
+"113
+[v TMR1_ReadTimer@readVal readVal `us  1 a 2 25 ]
+"115
+[v TMR1_ReadTimer@readValLow readValLow `uc  1 a 1 28 ]
+"114
+[v TMR1_ReadTimer@readValHigh readValHigh `uc  1 a 1 27 ]
+"125
+} 0
+"99 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/tmr3.c
+[v _TMR3_StartTimer TMR3_StartTimer `(v  1 e 1 0 ]
+{
+"103
+} 0
+"99 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/tmr1.c
+[v _TMR1_StartTimer TMR1_StartTimer `(v  1 e 1 0 ]
+{
+"103
+} 0
+"473 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_Baseline_Update Button_Baseline_Update `(v  1 s 1 Button_Baseline_Update ]
+{
+[s S720 . 16 `CE12923 1 name 1 0 `CE12860 1 sensor 1 1 `E12985 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Baseline_Update@button button `*.39S720  1 p 2 21 ]
+"487
+} 0
+"467
+[v _Button_Baseline_Initialize Button_Baseline_Initialize `(v  1 s 1 Button_Baseline_Initialize ]
+{
+[s S720 . 16 `CE12923 1 name 1 0 `CE12860 1 sensor 1 1 `E12985 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Baseline_Initialize@button button `*.39S720  1 p 2 24 ]
+"471
+} 0
+"440
+[v _Button_Reading_Update Button_Reading_Update `(v  1 s 1 Button_Reading_Update ]
+{
+[s S720 . 16 `CE12923 1 name 1 0 `CE12860 1 sensor 1 1 `E12985 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Reading_Update@button button `*.39S720  1 p 2 28 ]
+"452
+} 0
+"454
+[v _Button_Reading_Update_Helper Button_Reading_Update_Helper `(v  1 s 1 Button_Reading_Update_Helper ]
+{
+[s S720 . 16 `CE12923 1 name 1 0 `CE12860 1 sensor 1 1 `E12985 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Reading_Update_Helper@button button `*.39S720  1 p 2 24 ]
+"465
+} 0
+"570 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_RawSample_Get MTOUCH_Sensor_RawSample_Get `(us  1 e 2 0 ]
+{
+[v MTOUCH_Sensor_RawSample_Get@name name `E12860  1 a 1 wreg ]
+[v MTOUCH_Sensor_RawSample_Get@name name `E12860  1 a 1 wreg ]
+"572
+[v MTOUCH_Sensor_RawSample_Get@name name `E12860  1 a 1 23 ]
+"578
+} 0
+"391 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_Deviation_Update Button_Deviation_Update `(v  1 s 1 Button_Deviation_Update ]
+{
+"393
+[v Button_Deviation_Update@deviation deviation `l  1 a 4 33 ]
+[s S720 . 16 `CE12923 1 name 1 0 `CE12860 1 sensor 1 1 `E12985 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"391
+[v Button_Deviation_Update@button button `*.39S720  1 p 2 21 ]
+"411
+} 0
+"50 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"60
+} 0
+"64 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/tmr3.c
+[v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
+{
+"97
+} 0
+"178
+[v _TMR3_SetInterruptHandler TMR3_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR3_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 21 ]
+"180
+} 0
+"64 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+{
+"97
+} 0
+"178
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 21 ]
+"180
+} 0
+"76 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"90
+} 0
+"55 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"126
+} 0
+"62 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"74
+} 0
+"82 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Initialize MTOUCH_Initialize `(v  1 e 1 0 ]
+{
+"89
+} 0
+"350 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Scan_Initialize MTOUCH_Sensor_Scan_Initialize `(v  1 e 1 0 ]
+{
+"354
+} 0
+"232
+[v _MTOUCH_Sensor_ADCC_Initialize MTOUCH_Sensor_ADCC_Initialize `(v  1 e 1 0 ]
+{
+"272
+} 0
+"868
+[v _MTOUCH_Sensor_Sampled_ResetAll MTOUCH_Sensor_Sampled_ResetAll `(v  1 e 1 0 ]
+{
+[s S93 . 9 `CE12860 1 sensor_name 1 0 `Cuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+"870
+[v MTOUCH_Sensor_Sampled_ResetAll@sensor sensor `*.39S93  1 a 2 23 ]
+"875
+} 0
+"275
+[v _MTOUCH_Sensor_InitializeAll MTOUCH_Sensor_InitializeAll `(v  1 e 1 0 ]
+{
+"277
+[v MTOUCH_Sensor_InitializeAll@sensor sensor `E12860  1 a 1 32 ]
+"285
+} 0
+"203
+[v _MTOUCH_Sensor_Initialize MTOUCH_Sensor_Initialize `(E12863  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_Initialize@sensor sensor `E12860  1 a 1 wreg ]
+[v MTOUCH_Sensor_Initialize@sensor sensor `E12860  1 a 1 wreg ]
+"205
+[v MTOUCH_Sensor_Initialize@sensor sensor `E12860  1 a 1 23 ]
+"210
+} 0
+"885
+[v _Sensor_Sampled_Reset Sensor_Sampled_Reset `T(v  1 s 1 Sensor_Sampled_Reset ]
+{
+[s S93 . 9 `CE12860 1 sensor_name 1 0 `Cuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_Sampled_Reset@sensor sensor `*.39S93  1 p 2 21 ]
+"888
+} 0
+"759
+[v _MTOUCH_Sensor_Enable MTOUCH_Sensor_Enable `(v  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_Enable@sensor sensor `E12860  1 a 1 wreg ]
+[v MTOUCH_Sensor_Enable@sensor sensor `E12860  1 a 1 wreg ]
+"761
+[v MTOUCH_Sensor_Enable@sensor sensor `E12860  1 a 1 21 ]
+"763
+} 0
+"163 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_InitializeAll MTOUCH_Button_InitializeAll `(v  1 e 1 0 ]
+{
+"165
+[v MTOUCH_Button_InitializeAll@button button `E12923  1 a 1 32 ]
+"173
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+{
+"8
+[v memcpy@s s `*.32Cuc  1 a 2 29 ]
+"7
+[v memcpy@d d `*.39uc  1 a 2 27 ]
+"9
+[v memcpy@tmp tmp `uc  1 a 1 31 ]
+"4
+[v memcpy@d1 d1 `*.39v  1 p 2 21 ]
+[v memcpy@s1 s1 `*.32Cv  1 p 2 23 ]
+[v memcpy@n n `ui  1 p 2 25 ]
+"18
+} 0
+"151 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_Initialize MTOUCH_Button_Initialize `(v  1 e 1 0 ]
+{
+[v MTOUCH_Button_Initialize@name name `E12923  1 a 1 wreg ]
+[s S720 . 16 `CE12923 1 name 1 0 `CE12860 1 sensor 1 1 `E12985 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"153
+[v MTOUCH_Button_Initialize@button button `*.39S720  1 a 2 23 ]
+"151
+[v MTOUCH_Button_Initialize@name name `E12923  1 a 1 wreg ]
+"153
+[v MTOUCH_Button_Initialize@name name `E12923  1 a 1 22 ]
+"161
+} 0
+"821 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Calibrate MTOUCH_Sensor_Calibrate `(v  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_Calibrate@sensor sensor `E12860  1 a 1 wreg ]
+[v MTOUCH_Sensor_Calibrate@sensor sensor `E12860  1 a 1 wreg ]
+"823
+[v MTOUCH_Sensor_Calibrate@sensor sensor `E12860  1 a 1 21 ]
+"827
+} 0
+"52 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"56
+} 0
+"63 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+{
+"112
+} 0
+"308
+[v _ADCC_SetADTIInterruptHandler ADCC_SetADTIInterruptHandler `(v  1 e 1 0 ]
+{
+[v ADCC_SetADTIInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 21 ]
+"310
+} 0
+"520 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_SetPressedCallback MTOUCH_Button_SetPressedCallback `(v  1 e 1 0 ]
+{
+[v MTOUCH_Button_SetPressedCallback@callback callback `*.38(v  1 p 3 21 ]
+"523
+} 0
+"524
+[v _MTOUCH_Button_SetNotPressedCallback MTOUCH_Button_SetNotPressedCallback `(v  1 e 1 0 ]
+{
+[v MTOUCH_Button_SetNotPressedCallback@callback callback `*.38(v  1 p 3 21 ]
+"527
+} 0
+"58 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+{
+"84
+} 0
+"164 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/tmr3.c
+[v _TMR3_ISR TMR3_ISR `(v  1 e 1 0 ]
+{
+"175
+} 0
+"127
+[v i2_TMR3_WriteTimer TMR3_WriteTimer `(v  1 e 1 0 ]
+{
+[v i2TMR3_WriteTimer@timerVal timerVal `us  1 p 2 0 ]
+"147
+} 0
+"182
+[v _TMR3_DefaultInterruptHandler TMR3_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"185
+} 0
+"164 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/tmr1.c
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+{
+"175
+} 0
+"127
+[v i2_TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+{
+[v i2TMR1_WriteTimer@timerVal timerVal `us  1 p 2 0 ]
+"147
+} 0
+"182
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"185
+} 0
+"299 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/adcc.c
+[v _ADCC_ThresholdISR ADCC_ThresholdISR `(v  1 e 1 0 ]
+{
+"306
+} 0
+"311
+[v _ADCC_DefaultInterruptHandler ADCC_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"314
+} 0
+"495 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _ADCC_ThresholdISR_mTouch ADCC_ThresholdISR_mTouch `(v  1 e 1 0 ]
+{
+"500
+} 0
+"508
+[v _MTOUCH_Sensor_Service MTOUCH_Sensor_Service `T(v  1 s 1 MTOUCH_Sensor_Service ]
+{
+[s S93 . 9 `CE12860 1 sensor_name 1 0 `Cuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+"510
+[v MTOUCH_Sensor_Service@sensor sensor `*.39S93  1 a 2 13 ]
+"551
+} 0
+"362
+[v i2_Sensor_scheduleNextScan Sensor_scheduleNextScan `(v  1 s 1 i2_Sensor_scheduleNextScan ]
+{
+[s S93 . 9 `CE12860 1 sensor_name 1 0 `Cuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+"364
+[v i2Sensor_scheduleNextScan@sensor sensor `*.39S93  1 a 2 8 ]
+"365
+[v i2Sensor_scheduleNextScan@skipScan skipScan `a  1 a 1 7 ]
+"366
+[v i2Sensor_scheduleNextScan@state state `a  1 a 1 6 ]
+"416
+} 0
+"837
+[v i2_Sensor_isCalibrated Sensor_isCalibrated `T(a  1 s 1 i2_Sensor_isCalibrated ]
+{
+[s S93 . 9 `CE12860 1 sensor_name 1 0 `Cuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v i2Sensor_isCalibrated@sensor sensor `*.39S93  1 p 2 0 ]
+"840
+} 0
+"212
+[v i2_Sensor_SetTrisBit Sensor_SetTrisBit `(v  1 s 1 i2_Sensor_SetTrisBit ]
+{
+[v i2Sensor_SetTrisBit@sensor sensor `E12860  1 a 1 wreg ]
+[v i2Sensor_SetTrisBit@sensor sensor `E12860  1 a 1 wreg ]
+[v i2Sensor_SetTrisBit@TrisBit TrisBit `uc  1 p 1 0 ]
+[v i2Sensor_SetTrisBit@sensor sensor `E12860  1 a 1 3 ]
+"224
+} 0
+"877
+[v i2_MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(a  1 e 1 0 ]
+{
+[v i2MTOUCH_Sensor_wasSampled@sensor sensor `E12860  1 a 1 wreg ]
+[v i2MTOUCH_Sensor_wasSampled@sensor sensor `E12860  1 a 1 wreg ]
+"879
+[v i2MTOUCH_Sensor_wasSampled@sensor sensor `E12860  1 a 1 0 ]
+"883
+} 0
+"765
+[v i2_MTOUCH_Sensor_isEnabled MTOUCH_Sensor_isEnabled `(a  1 e 1 0 ]
+{
+[v i2MTOUCH_Sensor_isEnabled@sensor sensor `E12860  1 a 1 wreg ]
+[v i2MTOUCH_Sensor_isEnabled@sensor sensor `E12860  1 a 1 wreg ]
+"767
+[v i2MTOUCH_Sensor_isEnabled@sensor sensor `E12860  1 a 1 0 ]
+"771
+} 0
+"890
+[v _Sensor_setSampled Sensor_setSampled `T(v  1 s 1 Sensor_setSampled ]
+{
+[s S93 . 9 `CE12860 1 sensor_name 1 0 `Cuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_setSampled@sensor sensor `*.39S93  1 p 2 0 ]
+"893
+} 0
+"425
+[v _Sensor_autoCalibration Sensor_autoCalibration `(E12863  1 s 1 Sensor_autoCalibration ]
+{
+"427
+[v Sensor_autoCalibration@name name `E12860  1 a 1 10 ]
+[s S93 . 9 `CE12860 1 sensor_name 1 0 `Cuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+"425
+[v Sensor_autoCalibration@sensor sensor `*.39S93  1 p 2 4 ]
+"467
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\abs.c
+[v i2_abs abs `(i  1 e 2 0 ]
+{
+[v i2abs@a a `i  1 p 2 0 ]
+"4
+} 0
+"855 D:\PIC-Q10-Examples-update\RGB-LED-Control-using-touch\pic18f47q10-adcc-rgb-led-control-using-touch-sensors.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v i2_Sensor_isCalibratingAcqTime Sensor_isCalibratingAcqTime `T(a  1 s 1 i2_Sensor_isCalibratingAcqTime ]
+{
+[s S93 . 9 `CE12860 1 sensor_name 1 0 `Cuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v i2Sensor_isCalibratingAcqTime@sensor sensor `*.39S93  1 p 2 0 ]
+"859
+} 0
+"842
+[v _Sensor_setCalibrated Sensor_setCalibrated `(v  1 s 1 Sensor_setCalibrated ]
+{
+[s S93 . 9 `CE12860 1 sensor_name 1 0 `Cuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_setCalibrated@sensor sensor `*.39S93  1 p 2 0 ]
+"846
+} 0
+"848
+[v _Sensor_setCalibratAcqTime Sensor_setCalibratAcqTime `(v  1 s 1 Sensor_setCalibratAcqTime ]
+{
+[s S93 . 9 `CE12860 1 sensor_name 1 0 `Cuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_setCalibratAcqTime@sensor sensor `*.39S93  1 p 2 0 ]
+"853
+} 0
