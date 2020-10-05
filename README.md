@@ -81,7 +81,7 @@ In “Registers” view, RSTOSC is configured as HFINTOSC with HFFRQ = 64 MHz an
 
 ### Pin manager settings:
 
-Selected pins RB1 and RB3 as touch buttons, pins RB0 and RB2 to drive the feedback LEDs of touch buttons and RC0 to control RGB click.
+Selected pins RA2 and RD7 as touch buttons, pins RD5 and RB2 to drive the feedback LEDs of touch buttons and RA7 to control RGB click.
 
 <p align="center">
   <img width=auto height=auto src="images/pinManager.png">

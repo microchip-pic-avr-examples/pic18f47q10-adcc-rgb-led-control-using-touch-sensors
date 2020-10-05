@@ -40,9 +40,6 @@
         "subcategories": [
             "MCC",
             [
-               "Peripherals", "mTouch"
-            ],
-            [
                "Peripherals", "TMR1"
             ],
 			[
@@ -53,9 +50,11 @@
             ]	           			
         ],
         "peripherals": [
-            "mTouch","TMR1","TMR3","ADCC"
+            "TMR1","TMR3","ADCC"
         ],
         "keywords": [
+		    "mTouch",
+			"Hardware CVD",
             "Capacitive Touch",
             "RGB LED Colour",
 			"PIC18F47Q10 Curiosity Nano",
