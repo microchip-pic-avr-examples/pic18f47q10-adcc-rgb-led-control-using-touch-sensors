@@ -37,7 +37,7 @@ The MCC library for PIC18F47Q10 MCU provides support for touch buttons and proxi
 
 - [MPLAB X IDE v5.40](https://www.microchip.com/mplab/mplab-x-ide "MPLAB X IDE v5.40")
 - [XC8 Compiler v2.30](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.20")
-- [MCC Core v5.0.1](https://www.microchip.com/mplab/mplab-code-configurator "MCC Core v5.0.1")
+- [MPLAB Code Configurator v4.0.1](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB Code Configurator v4.0.1")
 - [mTouch Capacitive Sensing Library v2.90.0]( https://www.microchip.com/mplab/mplab-code-configurator "mTouch Capacitive Sensing Library v2.90.0")
 
 ***Note: For running the demo, the installed tool versions should be the same or later. This example is not tested with the previous versions.***
