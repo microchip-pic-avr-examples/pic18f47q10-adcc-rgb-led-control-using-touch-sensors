@@ -136,7 +136,7 @@ Customized the names of I/O pins as below. Configured the pins RD5 and RB2 as ou
 
 1. After making the above hardware connections, power on the board with micro USB cable.
 
-2. Build demo firmware and load the generated hex file onto the PIC18F25Q10 MCU. When the demo firmware is loaded, red LEDs are turned on with lowest brightness.
+2. Build demo firmware and load the generated hex file onto the PIC18F47Q10 MCU. When the demo firmware is loaded, red LEDs are turned on with lowest brightness.
 
 <p align="center">
   <img width=650 height=auto src="images/intialsetup.png">
