@@ -43,6 +43,7 @@
 
 #include "mcc_generated_files/mcc.h"
 #include "main.h"
+#include "application.h"
 /*
                          Main application
  */
@@ -71,6 +72,13 @@ void main(void)
     MTOUCH_Button_SetPressedCallback(processButtonTouch);
     MTOUCH_Button_SetNotPressedCallback(processButtonRelease);
     
+    //initialize RGB LEDs to turn ON before switch press
+     updateLED(getBrightnessLevel(),getColorMask());
+     
+     //turn OFF touch button LEDs
+     LED1_SetHigh();
+     LED2_SetHigh();
+     
     while (1) {
         applicationTask();
     }
