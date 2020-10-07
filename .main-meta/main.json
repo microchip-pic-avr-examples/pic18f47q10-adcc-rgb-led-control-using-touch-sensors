@@ -7,7 +7,7 @@
         "version": "1.0.0",
         "displayName": " RGB LED Control using Capacitive Touch Sensors",
         "projectName": "pic18f47q10-adcc-rgb-led-control-using-touch-sensors-mplab",
-        "shortDescription": "This example is developed using PIC18 Q10 family MCU and Curiosity Nano development board. The example demonstrates LED brightness control and sleep implementation using Core Independent Peripherals (CIPs) of PIC18F47Q10 MCU and through mobile android application.",
+        "shortDescription": "This example is developed using PIC18-Q10 family MCU and Curiosity Nano development board. The example demonstrates LED brightness control and sleep implementation using Core Independent Peripherals (CIPs) of PIC18F47Q10 MCU and through mobile android application.",
         "ide": {
             "name": "MPLAB X IDE",
             "semverRange": ">=5.40.0"
@@ -24,7 +24,7 @@
         },
         "configurator": {
             "name": "MCC",
-            "semverRange": ">=3.95.0"
+            "semverRange": ">=5.0.1"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -43,14 +43,11 @@
                "Peripherals", "TMR1"
             ],
 			[
-               "Peripherals", "TMR3"
-            ],
-			[
 			   "Peripherals", "ADCC"
             ]	           			
         ],
         "peripherals": [
-            "TMR1","TMR3","ADCC"
+            "TMR1","ADCC"
         ],
         "keywords": [
 		    "mTouch",
