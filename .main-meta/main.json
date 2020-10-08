@@ -3,10 +3,10 @@
     "category": "com.microchip.ide.project",
     "content": {
         "metaDataVersion": "1.1.0",
-        "name": "com.microchip.mcu8.mplabx.project.pic18f47q10-adcc-rgb-led-control-using-touch-sensors-mplab",
+        "name": "com.microchip.mcu8.mplabx.project.pic18f47q10-adcc-rgb-led-control-using-touch-sensors",
         "version": "1.0.0",
         "displayName": " RGB LED Control using Capacitive Touch Sensors",
-        "projectName": "pic18f47q10-adcc-rgb-led-control-using-touch-sensors-mplab",
+        "projectName": "pic18f47q10-adcc-rgb-led-control-using-touch-sensors",
         "shortDescription": "This example is developed using PIC18-Q10 family MCU and Curiosity Nano development board. The example demonstrates LED brightness control and sleep implementation using Core Independent Peripherals (CIPs) of PIC18F47Q10 MCU and through mobile android application.",
         "ide": {
             "name": "MPLAB X IDE",
