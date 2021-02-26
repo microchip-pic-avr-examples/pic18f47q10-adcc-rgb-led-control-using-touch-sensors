@@ -54,12 +54,12 @@
 		    "mTouch",
 			"CVD",
             "Capacitive Touch",
-            "RGB LED Colour",
-			"PIC18F47Q10 Curiosity Nano",
-			"QT7 Xplained Pro",
+            "LED",
+			"Touch sensing",
 			"Slider",
 			"Curiosity Nano Base click board",
-			"Touch Buttons"
+			"Touch and input sensing",
+			"Touch"
         ],
 		"additionalData": {
 			"longDescription": {
