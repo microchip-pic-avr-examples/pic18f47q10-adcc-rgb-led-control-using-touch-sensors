@@ -38,7 +38,7 @@
         },
         "author": "Microchip",
         "subcategories": [
-			"Communications",
+			"Communication",
             [
                "Peripherals", "TMR1"
             ],
@@ -57,7 +57,6 @@
 			"Touch sensing",
 			"Curiosity",
 			"User Interface",
-			"Touch and input sensing",
 			"Touch"
         ],
 		"additionalData": {
