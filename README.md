@@ -35,19 +35,20 @@ The MCC library for PIC18F47Q10 MCU provides support for touch buttons and proxi
 
 ## Software  Tools
 
-- [MPLAB X IDE v5.40](https://www.microchip.com/mplab/mplab-x-ide "MPLAB X IDE v5.40")
-- [XC8 Compiler v2.30](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.20")
-- [MPLAB Code Configurator v4.0.1](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB Code Configurator v4.0.1")
-- [mTouch Capacitive Sensing Library v2.90.0]( https://www.microchip.com/mplab/mplab-code-configurator "mTouch Capacitive Sensing Library v2.90.0")
+* MPLAB® X IDE [v5.40.0 or newer](https://www.microchip.com/mplab/mplab-x-ide)
+* XC8 Compiler [v2.30.0 or newer](https://www.microchip.com/mplab/compilers)
+* Microchip PIC18F-Q Series Device Support Pack [v1.8.154 or newer](https://packs.download.microchip.com/#collapse-Microchip-PIC18F-Q-DFP-pdsc)
+* Microchip Code Configurator [v4.0.1 or newer](https://www.microchip.com/mplab/mplab-code-configurator)
+* mTouch Capacitive Sensing Library [v2.90.0]( https://www.microchip.com/mplab/mplab-code-configurator "mTouch Capacitive Sensing Library v2.90.0")
 
 ***Note: For running the demo, the installed tool versions should be the same or later. This example is not tested with the previous versions.***
 
 ## Hardware used
 
-- [PIC18F47Q10 Curiosity Nano](https://www.microchip.com/Developmenttools/ProductDetails/DM182029 "PIC18F47Q10 Curiosity Nano")
-- [4x4 RGB click](https://www.mikroe.com/4x4-rgb-click "4x4 RGB click")
-- [QT7 Xplained Pro Extension Board](https://www.microchip.com/developmenttools/ProductDetails/atqt7-xpro "QT7 Xplained Pro Extension Board")
-- [Curiosity Nano Base for Click boards](https://www.microchip.com/developmenttools/ProductDetails/AC164162 "Curiosity Nano Base for Click boards")
+* [PIC18F47Q10 Curiosity Nano](https://www.microchip.com/Developmenttools/ProductDetails/DM182029 "PIC18F47Q10 Curiosity Nano")
+* [4x4 RGB click](https://www.mikroe.com/4x4-rgb-click "4x4 RGB click")
+* [QT7 Xplained Pro Extension Board](https://www.microchip.com/developmenttools/ProductDetails/atqt7-xpro "QT7 Xplained Pro Extension Board")
+* [Curiosity Nano Base for Click boards](https://www.microchip.com/developmenttools/ProductDetails/AC164162 "Curiosity Nano Base for Click boards")
 
 ## Hardware connections
 
